@@ -481,6 +481,35 @@ font-weight: bolder;
   
 }
 
+.abt-p1{
+  margin-top: 60px;
+}
+
+.abt-title{
+  position: relative;
+  left:-160px;
+  visibility: hidden;
+}
+.abt-title .w-line1{
+
+  position: relative;
+  border-bottom: 4px solid #EF6D0F;
+  padding-left:  18vw;
+  float: left;
+  top: 20px;
+}
+
+.abt-title .w-line2{
+
+
+  position: relative;
+  border-bottom: 4px solid #EF6D0F;
+  padding-left:  18vw;
+
+  float: right;
+  top: -40px;
+  
+}
 
 .title-color {
   color: #EF6D0F;
@@ -489,13 +518,29 @@ font-weight: bolder;
 .abt-evol{
   color: #5322BA;
 }
+.abt-align{
+  text-align: right;
+  margin-left: -9vw;
+  margin-right: 60px;
+}
 
+.abt-evol1{
+  
+
+  margin-top: 40px;
+}
 .abt-wwa{
 
   color: #EF6D0F;
   font-size: 30px;
 }
 
+
+.fetaure-page
+{
+
+  margin-top: 100px;
+}
 .page-title .breadcumb-nav {
   margin-top: 60px;
   padding-top: 30px;
@@ -505,6 +550,42 @@ font-weight: bolder;
 .slick-slide:focus, .slick-slide a {
   outline: none;
 }
+
+.abt-vmv{
+
+padding-top: 100px;
+padding-bottom:  350px;
+
+}
+
+.circle {
+  width: 320px;
+  height: 320px;
+  float: left;
+  margin: 0 20px 20px;
+  
+  background-color: #fafafa;
+
+  border-radius: 50%;
+
+
+    
+}
+
+.circle-txt{
+
+position: relative;
+top:50px;
+padding: 20px;
+text-align: center;
+
+}
+
+.circle-top-left {
+  box-shadow: inset 7.5px 7.5px  #EF6D0F;
+
+}
+
 
 @media (max-width: 480px) {
   h2, .h2 {
