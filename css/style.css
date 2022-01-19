@@ -707,9 +707,15 @@ color:#EF6D0F;
 
 @media screen and (max-width: 1000px) {
 
-.header-top-bar li{
-  visibility: hidden;
+.header-top-bar .mob-hd{
+  display: none;
+
 }
+
+}
+.top-rt{
+  text-align: right;
+  margin-top: -5px;
 
 }
 
