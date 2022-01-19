@@ -17,61 +17,19 @@
   <!-- Slick Slider  CSS -->
   <link rel="stylesheet" href="plugins/slick-carousel/slick/slick.css">
   <link rel="stylesheet" href="plugins/slick-carousel/slick/slick-theme.css">
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/slider.css">
- <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/animation.css">
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/animation.js" ></script>
 
 </head>
 
 
 
-
-<script type="text/javascript">
-    
-// Trigger CSS animations on scroll.
-// Detailed explanation can be found at http://www.bram.us/2013/11/20/scroll-animations/
-
-// Looking for a version that also reverses the animation when
-// elements scroll below the fold again?
-// --> Check https://codepen.io/bramus/pen/vKpjNP
-
-jQuery(function($) {
-  
-  // Function which adds the 'animated' class to any '.animatable' in view
-  var doAnimations = function() {
-    
-    // Calc current offset and get all animatables
-    var offset = $(window).scrollTop() + $(window).height(),
-        $animatables = $('.animatable');
-    
-    // Unbind scroll handler if we have no animatables
-    if ($animatables.length == 0) {
-      $(window).off('scroll', doAnimations);
-    }
-    
-    // Check all animatables and animate them if necessary
-        $animatables.each(function(i) {
-       var $animatable = $(this);
-            if (($animatable.offset().top + $animatable.height() - 20) < offset) {
-        $animatable.removeClass('animatable').addClass('animated');
-            }
-    });
-
-    };
-  
-  // Hook doAnimations on scroll, and trigger a scroll
-    $(window).on('scroll', doAnimations);
-  $(window).trigger('scroll');
-
-});
-
-
-</script>
 
 <body id="top">
 
@@ -120,21 +78,14 @@ jQuery(function($) {
 			    <li class="nav-item"><a class="nav-link" href="service.html">Products</a></li>
 
 			    <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="department.html" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Manufacturing <i class="icofont-thin-down"></i></a>
-					<ul class="dropdown-menu" aria-labelledby="dropdown02">
-						<li><a class="dropdown-item" href="department.html">Company</a></li>
-						<li><a class="dropdown-item" href="department-single.html">Storage</a></li>
-					</ul>
+					<a class="nav-link" href="department.html">Manufacturing </a>
+					
 			  	</li>
 
 
 			   <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="blog-sidebar.html" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Clients <i class="icofont-thin-down"></i></a>
-					<ul class="dropdown-menu" aria-labelledby="dropdown05">
-						<li><a class="dropdown-item" href="blog-sidebar.html">Clients Info</a></li>
-
-						<li><a class="dropdown-item" href="blog-single.html">News</a></li>
-					</ul>
+					<a class="nav-link" href="blog-sidebar.html">Clients </a>
+					
 			  	</li>
 			   <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 			</ul>
@@ -153,13 +104,13 @@ jQuery(function($) {
 			<div class="col-lg-6 col-md-12 col-xl-7">
 				<div class="block">
 					<div class="divider mb-3"></div>
-					<span class="text-uppercase text-sm letter-spacing  ">Pet India Industries</span>
+					<span class="text-uppercase text-sm letter-spacing  "><!-- Pet India Industries --></span>
 					<h1 class="mb-3 mt-3">Spread Ideas and Evolve
 					</h1>
 					
 					<p class="mb-4 pr-5"></p>
 					<div class="btn-container animatable bounceInLeft">
-						<a href="appoinment.html" target="_blank" class="btn btn-main-2 btn-icon btn-round-full">View Products <i class="icofont-simple-right ml-2  "></i></a>
+						<a href="service.html" target="_blank" class="btn btn-main-2 btn-icon btn-round-full">View Products <i class="icofont-simple-right ml-2  "></i></a>
 					</div>
 				</div>
 			</div>
@@ -239,21 +190,21 @@ heights in our business endeavour.</div>
 
 
 
-<section class="section about animatable moveUp">
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-lg-4 col-sm-6">
-				<div class="about-img">
-					<img src="images/bg/product_1.jpg" alt="" class="img-fluid">
+<section class="section about ">
+	<div class="container  ">
+		<div class="row align-items-center ">
+			<div class="col-lg-4 col-sm-6  ">
+				<div class="about-img ">
+					<img src="images/bg/product_1.jpg" alt="" class="img-fluid ">
 					<img src="images/bg/product_2.png" alt="" class="img-fluid mt-4">
 				</div>
 			</div>
-			<div class="col-lg-4 col-sm-6">
+			<div class="col-lg-4 col-sm-6 ">
 				<div class="about-img mt-4 mt-lg-0">
 					<img src="images/bg/product_3.jpg" alt="" class="img-fluid">
 				</div>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-4  animatable fadeInUp">
 				<div class="about-content pl-4 mt-4 mt-lg-0">
 					<h2 class="title-color">Our Products</h2>
 					<p class="mt-4 mb-5">We provide best leading pet bottles Nulla perferendis veniam deleniti ipsum officia dolores repellat laudantium obcaecati neque.</p>
@@ -337,7 +288,7 @@ heights in our business endeavour.</div>
 
 
 
-<section class="section service animatable fadeInDown">
+<section class="section service ">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-7 text-center">
@@ -350,7 +301,7 @@ heights in our business endeavour.</div>
 		</div>
 
 		<div class="row">
-			<div class="col-lg-3 col-md-6 col-sm-5">
+			<div class="col-lg-3 col-md-6 col-sm-5 animatable fadeInUp">
 				<div class="service-item mb-4">
 				
 
@@ -360,7 +311,7 @@ heights in our business endeavour.</div>
 				</div>
 			</div>
 
-			<div class="col-lg-3 col-md-6 col-sm-5">
+			<div class="col-lg-3 col-md-6 col-sm-5 animatable fadeInUp">
 				<div class="service-item mb-4">
 					
 					<div class="content">
@@ -370,7 +321,7 @@ heights in our business endeavour.</div>
 				</div>
 			</div>
 			
-			<div class="col-lg-3 col-md-6 col-sm-5">
+			<div class="col-lg-3 col-md-6 col-sm-5 animatable fadeInUp">
 				<div class="service-item mb-4">
 					
 					<div class="content">
@@ -381,7 +332,7 @@ heights in our business endeavour.</div>
 			</div>
 
 
-			<div class="col-lg-3 col-md-6 col-sm-5">
+			<div class="col-lg-3 col-md-6 col-sm-5 animatable fadeInUp">
 				<div class="service-item mb-4">
 					
 
@@ -392,7 +343,7 @@ heights in our business endeavour.</div>
 				</div>
 			</div>
 
-			<div class="col-lg-3 col-md-6 col-sm-5">
+			<div class="col-lg-3 col-md-6 col-sm-5 animatable fadeInUp">
 				<div class="service-item mb-4">
 					
 					<div class="content">
@@ -402,7 +353,7 @@ heights in our business endeavour.</div>
 				</div>
 			</div>
 			
-			<div class="col-lg-3 col-md-6 col-sm-5">
+			<div class="col-lg-3 col-md-6 col-sm-5 animatable fadeInUp">
 				<div class="service-item mb-4">
 					
 					<div class="content">
@@ -415,7 +366,7 @@ heights in our business endeavour.</div>
 			</div>
 
 
-<div class="col-lg-3 col-md-6 col-sm-5">
+<div class="col-lg-3 col-md-6 col-sm-5 animatable fadeInUp">
 				<div class="service-item mb-4">
 
 					<div class="content">
@@ -427,7 +378,7 @@ heights in our business endeavour.</div>
 			</div>
 
 
-			<div class="col-lg-3 col-md-6 col-sm-5">
+			<div class="col-lg-3 col-md-6 col-sm-5 animatable fadeInUp">
 				<div class="service-item mb-4">
 					
 					<div class="content">
@@ -437,7 +388,7 @@ heights in our business endeavour.</div>
 			</div>
 
 
-			<div class="col-lg-3 col-md-6 col-sm-5">
+			<div class="col-lg-3 col-md-6 col-sm-5 animatable fadeInUp">
 				<div class="service-item mb-4">
 					
 					<div class="content">
@@ -447,7 +398,7 @@ heights in our business endeavour.</div>
 			</div>
 
 
-<div class="col-lg-3 col-md-6 col-sm-5">
+<div class="col-lg-3 col-md-6 col-sm-5 animatable fadeInUp">
 				<div class="service-item mb-4">
 					
 					<div class="content">
@@ -456,7 +407,7 @@ heights in our business endeavour.</div>
 				</div>
 			</div>
 
-			<div class="col-lg-3 col-md-6 col-sm-5">
+			<div class="col-lg-3 col-md-6 col-sm-5 animatable fadeInUp">
 				<div class="service-item mb-4">
 					
 					<div class="content">
@@ -465,7 +416,7 @@ heights in our business endeavour.</div>
 				</div>
 			</div>
 
-			<div class="col-lg-3 col-md-6 col-sm-5">
+			<div class="col-lg-3 col-md-6 col-sm-5 animatable fadeInUp">
 				<div class="service-item mb-4">
 					
 					<div class="content">
@@ -805,7 +756,7 @@ heights in our business endeavour.</div>
 							<i class="icofont-email mr-3"></i>
 							<span class="h6 mb-0">Support Available for 24/7</span>
 						</div>
-						<h4 class="mt-2"><a href="tel:+23-345-67890">petindiaindustries@email.com</a></h4>
+						<h4 class="mt-2"><a href="tel:+23-345-67890">petindiaindustries@gmail.com</a></h4>
 					</div>
 
 					<div class="footer-contact-block">
