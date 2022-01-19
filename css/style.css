@@ -705,6 +705,11 @@ color:#EF6D0F;
 }
 
 
+@media screen and (max-width: 1000px) {
+
+
+}
+
 
 .top-bar-info li a {
   color: #fff;
@@ -783,7 +788,7 @@ color:#EF6D0F;
   }
   .banner {
     min-height: 450px;
-    background: #fff !important;
+  
   }
 }
 
@@ -794,7 +799,7 @@ color:#EF6D0F;
   }
   .banner {
     min-height: 450px;
-    background: #fff !important;
+  
   }
 }
 
@@ -803,9 +808,7 @@ color:#EF6D0F;
     font-size: 56px;
     line-height: 70px;
   }
-  .banner {
-    background: #fff !important;
-  }
+  
 }
 
 @media (max-width: 992px) {
