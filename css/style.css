@@ -258,6 +258,7 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   background: #223a66;
   color: #fff;
   border-color: #223a66;
+
 }
 
 .btn-main:hover {
@@ -272,12 +273,20 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
 
 }
 
-.btn-main-2:hover {
+.banner .btn-main-2:hover {
   
-  font-size: 18px;
+  font-size: 17px;
   color:white;
 
 }
+
+.btn-main-2:hover
+{
+  color:white;
+  font-size: 18px;
+
+}
+
 
 .btn-solid-border {
   border: 2px solid #223a66;
@@ -639,7 +648,7 @@ text-align: center;
   color: #222;
   font-family: "Exo", sans-serif;
   text-transform: capitalize;
-  font-size: 16px
+  font-size: 16px;
 
   transition: all .25s ease;
 }
@@ -922,6 +931,8 @@ color:#EF6D0F;
   text-align: center;
   padding: 55px 0px 40px 0px;
   position: relative;
+  color:white;
+  font-size: 20px;
 }
 
 .counter-stat i {
@@ -1093,6 +1104,7 @@ padding-bottom: 100px;
   .doctors .btn-group .btn {
     margin: 8px 3px;
   }
+  
 }
 
 @media (max-width: 400px) {
@@ -1263,12 +1275,22 @@ padding-bottom: 100px;
   }
 }
 
+
+.about-content{
+  padding-left: 1.5rem ;
+
+}
+
 @media (max-width: 992px) {
   .testimonial-wrap {
     margin-left: 0px;
   }
   .testimonial::before {
     display: none;
+  }
+  .about-content{
+    padding-left: 0;
+    padding-top: 23px;
   }
 }
 
@@ -1817,7 +1839,10 @@ border:2px solid black;
 
 }
 
-
+.nout:focus{
+ 
+  border:2px solid red;
+}
 
 
 
