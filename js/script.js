@@ -27,19 +27,19 @@ function showSlides() {
 
   if (slideIndex > slides.length - 1) slideIndex = 0;
   if (slideIndex < 0) slideIndex = slides.length - 1;
-  
+
   // hide all slides
   slides.forEach((slide) => {
     slide.style.display = "none";
   });
-  
+
   // show one slide base on index number
   slides[slideIndex].style.display = "block";
-  
+
   dots.forEach((dot) => {
     dot.classList.remove("active");
   });
-  
+
   dots[slideIndex].classList.add("active");
 }
 
@@ -57,230 +57,219 @@ setInterval(() => {
   }
 }, 1000); // 1sec
 
+(function ($) {
+  "use strict";
 
-;(function ($) {
+  // SCROLL TO TOP
 
-	'use strict';
-	
- // SCROLL TO TOP
-  
-  $(window).on('scroll', function () {
+  $(window).on("scroll", function () {
     if ($(window).scrollTop() > 70) {
-        $('.backtop').addClass('reveal');
+      $(".backtop").addClass("reveal");
     } else {
-        $('.backtop').removeClass('reveal');
+      $(".backtop").removeClass("reveal");
     }
-});
- 
-	$('.portfolio-single-slider').slick({
-		infinite: true,
-		arrows: false,
-		autoplay: true,
-		autoplaySpeed: 2000
+  });
 
-	});
+  $(".portfolio-single-slider").slick({
+    infinite: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
 
-	$('.clients-logo').slick({
-		infinite: true,
-		arrows: false,
-		autoplay: true,
-		slidesToShow: 6,
-		slidesToScroll: 6,
-		autoplaySpeed: 6000,
-		responsive: [
-		    {
-		      breakpoint: 1024,
-		      settings: {
-		        slidesToShow:6,
-		        slidesToScroll: 6,
-		        infinite: true,
-		        dots: true
-		      }
-		    },
-		    {
-		      breakpoint: 900,
-		      settings: {
-		        slidesToShow:4,
-		        slidesToScroll: 4
-		      }
-		    },{
-		      breakpoint: 600,
-		      settings: {
-		        slidesToShow: 4,
-		        slidesToScroll: 4
-		      }
-		    },
-		    {
-		      breakpoint: 480,
-		      settings: {
-		        slidesToShow: 2,
-		        slidesToScroll: 2
-		      }
-		    }
-		  
-  		]
-	});
+  $(".clients-logo").slick({
+    infinite: true,
+    arrows: false,
+    autoplay: true,
+    slidesToShow: 6,
+    slidesToScroll: 6,
+    autoplaySpeed: 6000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 6,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+    ],
+  });
 
-	$('.testimonial-wrap').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		infinite: true,
-		dots: true,
-		arrows: false,
-		autoplay: true,
-		vertical:true,
-		verticalSwiping:true,
-		autoplaySpeed: 6000,
-		responsive: [
-		    {
-		      breakpoint: 1024,
-		      settings: {
-		        slidesToShow:1,
-		        slidesToScroll: 1,
-		        infinite: true,
-		        dots: true
-		      }
-		    },
-		    {
-		      breakpoint: 900,
-		      settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1
-		      }
-		    },{
-		      breakpoint: 600,
-		      settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1
-		      }
-		    },
-		    {
-		      breakpoint: 480,
-		      settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1
-		      }
-		    }
-		  
-  		]
-	});
+  $(".testimonial-wrap").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    dots: true,
+    arrows: false,
+    autoplay: true,
+    vertical: true,
+    verticalSwiping: true,
+    autoplaySpeed: 6000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
 
-	$('.testimonial-wrap-2').slick({
-		slidesToShow: 2,
-		slidesToScroll: 2,
-		infinite: true,
-		dots: true,
-		arrows:false,
-		autoplay: true,
-		autoplaySpeed: 6000,
-		responsive: [
-		    {
-		      breakpoint: 1024,
-		      settings: {
-		        slidesToShow:2,
-		        slidesToScroll:2,
-		        infinite: true,
-		        dots: true
-		      }
-		    },
-		    {
-		      breakpoint: 900,
-		      settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1
-		      }
-		    },{
-		      breakpoint: 600,
-		      settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1
-		      }
-		    },
-		    {
-		      breakpoint: 480,
-		      settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1
-		      }
-		    }
-		  
-  		]
-	});
+  $(".testimonial-wrap-2").slick({
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    infinite: true,
+    dots: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 6000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
 
+  var map;
 
+  function initialize() {
+    var mapOptions = {
+      zoom: 13,
+      center: new google.maps.LatLng(50.97797382271958, -114.107718560791),
+      // styles: style_array_here
+    };
+    map = new google.maps.Map(
+      document.getElementById("map-canvas"),
+      mapOptions
+    );
+  }
 
-	var map;
+  var google_map_canvas = $("#map-canvas");
 
-	function initialize() {
-		var mapOptions = {
-			zoom: 13,
-			center: new google.maps.LatLng(50.97797382271958, -114.107718560791)
-			// styles: style_array_here
-		};
-		map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-	}
+  if (google_map_canvas.length) {
+    google.maps.event.addDomListener(window, "load", initialize);
+  }
 
-	var google_map_canvas = $('#map-canvas');
+  // Counter
 
-	if (google_map_canvas.length) {
-		google.maps.event.addDomListener(window, 'load', initialize);
-	}
+  $(".counter-stat span").counterUp({
+    delay: 10,
+    time: 1000,
+  });
 
-	// Counter
+  // Shuffle js filter and masonry
+  var Shuffle = window.Shuffle;
+  var jQuery = window.jQuery;
 
-	$('.counter-stat span').counterUp({
-	      delay: 10,
-	      time: 1000
-	  });
+  var myShuffle = new Shuffle(document.querySelector(".shuffle-wrapper"), {
+    itemSelector: ".shuffle-item",
+    buffer: 1,
+  });
 
-		
- // Shuffle js filter and masonry
-    var Shuffle = window.Shuffle;
-    var jQuery = window.jQuery;
-
-    var myShuffle = new Shuffle(document.querySelector('.shuffle-wrapper'), {
-        itemSelector: '.shuffle-item',
-        buffer: 1
-    });
-
-    jQuery('input[name="shuffle-filter"]').on('change', function (evt) {
-        var input = evt.currentTarget;
-        if (input.checked) {
-            myShuffle.filter(input.value);
-        }
-    });
-
+  jQuery('input[name="shuffle-filter"]').on("change", function (evt) {
+    var input = evt.currentTarget;
+    if (input.checked) {
+      myShuffle.filter(input.value);
+    }
+  });
 })(jQuery);
 
-
-
-
-jQuery(function($) {
-  
+jQuery(function ($) {
   // Function which adds the 'animated' class to any '.animatable' in view
-  var doAnimations = function() {
-    
+  var doAnimations = function () {
     // Calc current offset and get all animatables
     var offset = $(window).scrollTop() + $(window).height(),
-        $animatables = $('.animatable');
-    
+      $animatables = $(".animatable");
+
     // Unbind scroll handler if we have no animatables
     if ($animatables.length == 0) {
-      $(window).off('scroll', doAnimations);
+      $(window).off("scroll", doAnimations);
     }
-    
+
     // Check all animatables and animate them if necessary
-		$animatables.each(function(i) {
-       var $animatable = $(this);
-			if (($animatable.offset().top + $animatable.height() - 20) < offset) {
-        $animatable.removeClass('animatable').addClass('animated');
-			}
+    $animatables.each(function (i) {
+      var $animatable = $(this);
+      if ($animatable.offset().top + $animatable.height() - 100 < offset) {
+        $animatable.removeClass("animatable").addClass("animated");
+      }
     });
+  };
 
-	};
-  
   // Hook doAnimations on scroll, and trigger a scroll
-	$(window).on('scroll', doAnimations);
-  $(window).trigger('scroll');
-
+  $(window).on("scroll", doAnimations);
+  $(window).trigger("scroll");
 });
