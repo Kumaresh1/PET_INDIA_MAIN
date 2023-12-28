@@ -528,17 +528,26 @@ a:focus {
 
 .abt-vmv {
   padding-top: 100px;
-  padding-bottom: 350px;
+  /* padding-bottom: 350px; */
 }
 
+section.abt-vmv > div,
+.about-vmv .container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* flex-basis: 320px;
+  flex-grow: 0;
+  flex-shrink: 0; */
+  /* justify-content: space-evenly; */
+}
 .circle {
   width: 320px;
   height: 320px;
-  float: left;
+  /* float: left; */
   margin: 0 20px 20px;
-
   background-color: #fafafa;
-
   border-radius: 50%;
 }
 
@@ -905,6 +914,12 @@ a:focus {
   background: #fff;
   padding: 30px;
   border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
 }
 
 .service .icon {
@@ -1770,6 +1785,17 @@ a:focus {
 
 .nout:focus {
   border: 2px solid red;
+}
+
+.welcome-section {
+  margin-top: 16vh;
+  margin-bottom: 3vh;
+}
+@media screen and (max-width: 750px) {
+  .welcome-section {
+    margin-top: 4vh;
+    margin-bottom: 0vh;
+  }
 }
 
 /*# sourceMappingURL=maps/style.css.map */
