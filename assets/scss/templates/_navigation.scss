@@ -1,44 +1,38 @@
+#navbarmain {
+  padding: 20px 0px;
 
-
-#navbarmain{
- padding: 20px 0px;
-
- .nav-link{
+  .nav-link {
     font-weight: 600;
     padding: 10px 15px;
     color: $black;
     font-family: $primary-font;
     text-transform: capitalize;
     font-size: 16px;
-    -webkit-transition: all .25s ease;
-       -moz-transition: all .25s ease;
-        -ms-transition: all .25s ease;
-         -o-transition: all .25s ease;
-            transition: all .25s ease;
-   
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
   }
-
 }
 
 .dropdown-toggle::after {
-    display: none;
+  display: none;
 }
 
-.navbar-brand{
+.navbar-brand {
   margin-top: 10px;
 }
 
-
 .dropdown {
-
-  .dropdown-menu{
+  .dropdown-menu {
     position: absolute;
     display: block;
-    background:$light;
+    background: $light;
     min-width: 240px;
     top: 130%;
     left: 0;
-    right:0px;
+    right: 0px;
     opacity: 0;
     padding: 0px;
     visibility: hidden;
@@ -47,74 +41,65 @@
     -ms-transition: all 0.3s ease-out 0s;
     -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
-    border:0px;
-    border-top: 5px solid #e12454;
+    border: 0px;
+    border-top: 5px solid #ef6d0f;
     border-radius: 0px;
   }
 
-   &:hover .dropdown-menu{
-      opacity: 1;
-      visibility: visible;
-      top:115%;
-    }
+  &:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    top: 115%;
+  }
 
-    .dropdown-item{
-      padding: 13px 20px;
-      border-bottom:1px solid #eee;
-      background: transparent;
-      font-weight: 400;
-      color: #555;
-      &:hover{
-        color: $secondary-color;
-      }
-    }
-}
-
-
-
-
-
-
-
-
-
-
-.header-top-bar{
-  background: $primary-color;
-  font-size: 14px;
-  padding:10px 0px;
-  box-shadow: 0 1px 2px rgba(0,0,0,.05);
-  color: $light;
-}
-
-.top-bar-info{
-  li{
-    a{
-      color: $light;
-      margin-right:20px;
+  .dropdown-item {
+    padding: 13px 20px;
+    border-bottom: 1px solid #eee;
+    background: transparent;
+    font-weight: 400;
+    color: #555;
+    &:hover {
+      color: $secondary-color;
     }
   }
 }
 
-.top-right-bar{
-  a{
-      span{
-        color: $light;
-        font-weight: 600;
-        letter-spacing: 1px;
-      }
-      i{
-        // width: 40px;
-        // height:40px;
-        // display: inline-block;
-        // background: $base-color;
-        // border-radius: 100%;
-        // text-align: center;
-        // padding-top: 13px;
-        color: $light;
-        margin-right: 10px;
-      }
+.header-top-bar {
+  background: $primary-color;
+  font-size: 14px;
+  padding: 10px 0px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  color: $light;
+}
+
+.top-bar-info {
+  li {
+    a {
+      color: $light;
+      margin-right: 20px;
     }
+  }
+}
+
+.top-right-bar {
+  a {
+    span {
+      color: $light;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+    i {
+      // width: 40px;
+      // height:40px;
+      // display: inline-block;
+      // background: $base-color;
+      // border-radius: 100%;
+      // text-align: center;
+      // padding-top: 13px;
+      color: $light;
+      margin-right: 10px;
+    }
+  }
 }
 
 // .navigation{
@@ -144,9 +129,8 @@
 //         -ms-transition: all .25s ease;
 //          -o-transition: all .25s ease;
 //             transition: all .25s ease;
-   
-//   }
 
+//   }
 
 // }
 
@@ -160,10 +144,9 @@
 //   }
 // }
 
-
 // .navbar-brand{
 //   font-weight: 600;
- 
+
 // }
 
 // .dropdown-menu{
@@ -215,11 +198,10 @@
 
 // // Responsive
 
-
 // @include mobile{
 //   #navbar{
 //     background: $light;
-//   } 
+//   }
 //   #navbar.nav-text-white{
 //     .nav-link{
 //       color: $black;
@@ -229,7 +211,7 @@
 //   #navbar.nav-text-white .mobile-logo{
 //       display: block;
 //   }
-  
+
 //   #navbar.nav-text-white .hidden-logo{
 //       display: none;
 //   }
@@ -253,7 +235,6 @@
 
 // }
 
-
 // @include mobile-xs{
 //   #navbar{
 //     background: $light;
@@ -267,7 +248,7 @@
 //    #navbar.nav-text-white .mobile-logo{
 //       display: block;
 //   }
-  
+
 //   #navbar.nav-text-white .hidden-logo{
 //       display: none;
 //   }
@@ -286,7 +267,6 @@
 
 // }
 
-
 // @include tablet{
 //   #navbar{
 //     background: $light;
@@ -297,7 +277,6 @@
 //     }
 //   }
 
-  
 //   .navbar-toggler {
 //       color: $black;
 //   }
@@ -310,7 +289,7 @@
 //    #navbar.nav-text-white .mobile-logo{
 //       display: block;
 //   }
-  
+
 //   #navbar.nav-text-white .hidden-logo{
 //       display: none;
 //   }
@@ -319,8 +298,6 @@
 //   }
 
 // }
-
-
 
 // @include desktop{
 //   #navbar{
@@ -332,11 +309,10 @@
 //     }
 //   }
 
-
 //   #navbar.nav-text-white .mobile-logo{
 //       display: block;
 //   }
-  
+
 //   #navbar.nav-text-white .hidden-logo{
 //       display: none;
 //   }
@@ -353,7 +329,3 @@
 //       padding: 0px 30px;
 //   }
 // }
-
-
-
-
