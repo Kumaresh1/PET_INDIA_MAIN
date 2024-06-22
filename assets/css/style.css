@@ -240,8 +240,8 @@ input[type="tel"]:focus {
 }
 
 .btn-main:hover {
-  background: #e12454;
-  border-color: #e12454;
+  background: #ef6d0f;
+  border-color: #ef6d0f;
   color: #fff;
 }
 
@@ -428,7 +428,7 @@ a {
 
 a:focus,
 a:hover {
-  color: white;
+  color: rgb(104, 104, 104);
   text-decoration: none;
 }
 
@@ -739,7 +739,7 @@ section.abt-vmv > div,
 }
 
 .text-color-2 {
-  color: #e12454;
+  color: #ef6d0f;
 }
 
 .divider {
@@ -928,7 +928,7 @@ section.abt-vmv > div,
 }
 
 .service i {
-  color: #e12454;
+  color: #ef6d0f;
 }
 
 .service h4 {
@@ -972,7 +972,7 @@ section.abt-vmv > div,
 }
 
 .department-service li i {
-  color: #e12454;
+  color: #ef6d0f;
 }
 
 .doctors .btn-group .btn {
@@ -987,7 +987,7 @@ section.abt-vmv > div,
 .doctors .btn-group .btn.active {
   box-shadow: none !important;
   border-color: transparent;
-  background: #e12454;
+  background: #ef6d0f;
   color: #fff;
 }
 
@@ -999,14 +999,14 @@ section.abt-vmv > div,
 .doctors .btn-group .btn:focus {
   box-shadow: none !important;
   border-color: transparent;
-  background: #e12454;
+  background: #ef6d0f;
   color: #fff;
 }
 
 .doctors .btn-group .btn:hover {
   box-shadow: none !important;
   border-color: transparent;
-  background: #e12454;
+  background: #ef6d0f;
   color: #fff;
 }
 
@@ -1046,7 +1046,7 @@ section.abt-vmv > div,
 
 .doctor-info li i {
   margin-right: 20px;
-  color: #e12454;
+  color: #ef6d0f;
 }
 
 .read-more {
@@ -1199,7 +1199,7 @@ section.abt-vmv > div,
 
 .testimonial-block.style-2 i {
   bottom: -20px;
-  color: #e12454;
+  color: #ef6d0f;
   opacity: 0.3;
 }
 
@@ -1303,7 +1303,7 @@ section.abt-vmv > div,
   font-size: 50px;
   margin-bottom: 15px;
   display: inline-block;
-  color: #e12454;
+  color: #ef6d0f;
 }
 
 .blog-item-content h2 {
@@ -1359,7 +1359,7 @@ section.abt-vmv > div,
   color: #223a66;
   padding: 40px;
   font-style: italic;
-  border-left: 5px solid #e12454;
+  border-left: 5px solid #ef6d0f;
   margin: 25px 0px;
 }
 
@@ -1569,7 +1569,7 @@ section.abt-vmv > div,
   bottom: 0px;
   width: 35px;
   height: 3px;
-  background: #e12454;
+  background: #ef6d0f;
 }
 
 .sidebar-widget.latest-post .media img {
@@ -1682,7 +1682,7 @@ section.abt-vmv > div,
 }
 
 .widget .footer-menu a:hover {
-  color: #e12454;
+  color: #ef6d0f;
 }
 
 .footer-contact-block span {
@@ -1715,29 +1715,12 @@ section.abt-vmv > div,
 }
 
 .widget-contact h6 i {
-  color: #e12454;
-}
-
-.subscribe {
-  position: relative;
-}
-
-.subscribe .form-control {
-  border-radius: 50px;
-  height: 60px;
-  padding-left: 25px;
-  border-color: #eee;
-}
-
-.subscribe .btn {
-  position: absolute;
-  right: 1px;
-  top: 1px;
+  color: #ef6d0f;
 }
 
 .backtop {
   position: fixed;
-  background: #e12454;
+  background: #ef6d0f;
   z-index: 9999;
   display: inline-block;
   right: 55px;
@@ -1802,3 +1785,7 @@ section.abt-vmv > div,
   font-size: 20px;
 }
 /*# sourceMappingURL=maps/style.css.map */
+
+.highlight {
+  color: #ef6d0f !important;
+}
