@@ -71,6 +71,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/js/animation.js"></script>
   </head>
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-STKPMNMN15"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-STKPMNMN15");
+
+    gtag("user-event", "screen_view", {
+      app_name: "myAppName",
+      screen_name: navigator?.userAgent,
+    });
+  </script>
 
   <body id="top">
     <header>
