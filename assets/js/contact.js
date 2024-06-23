@@ -9,7 +9,7 @@ document
     const phone = document.getElementById("phone").value;
     const message = document.getElementById("message").value;
 
-    fetch("http://localhost:3000/send-email", {
+    fetch("https://node-hello-j7mo.onrender.com/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
