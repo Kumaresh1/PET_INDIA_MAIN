@@ -1,39 +1,31 @@
-(function ($) {
-    'use strict';
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
 
-    var form = $('.contact__form'),
-        message = $('.contact__msg'),
-        form_data;
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const subject = document.getElementById("subject").value;
+    const phone = document.getElementById("phone").value;
+    const message = document.getElementById("message").value;
 
-    // Success function
-    function done_func(response) {
-        message.fadeIn().removeClass('alert-danger').addClass('alert-success');
-        message.text(response);
-        setTimeout(function () {
-            message.fadeOut();
-        }, 2000);
-        form.find('input:not([type="submit"]), textarea').val('');
-    }
-
-    // fail function
-    function fail_func(data) {
-        message.fadeIn().removeClass('alert-success').addClass('alert-success');
-        message.text(data.responseText);
-        setTimeout(function () {
-            message.fadeOut();
-        }, 2000);
-    }
-    
-    form.submit(function (e) {
-        e.preventDefault();
-        form_data = $(this).serialize();
-        $.ajax({
-            type: 'POST',
-            url: form.attr('action'),
-            data: form_data
-        })
-        .done(done_func)
-        .fail(fail_func);
-    });
-    
-})(jQuery);
+    fetch("http://localhost:3000/send-email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ name, email, subject, phone, message }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.success) {
+          document.querySelector(".contact__msg").style.display = "block";
+          document.getElementById("contact-form").reset();
+        } else {
+          alert("Failed to send email: " + data.message);
+        }
+      })
+      .catch((error) => {
+        alert("Error: " + error);
+      });
+  });

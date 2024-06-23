@@ -56,6 +56,19 @@
     <script src="../assets/js/animation.js"></script>
   </head>
 
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-STKPMNMN15"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-STKPMNMN15");
+  </script>
   <body id="top">
     <header>
       <div class="header-top-bar">
@@ -79,7 +92,7 @@
             </div>
             <div class="col-lg-6">
               <div class="top-rt top-right-bar mt-2 mt-lg-0">
-                <a href="tel:+919677013663 ">
+                <a href="tel:+919677013663">
                   <span>Call Now: </span>
                   <span class="h4">(+91) 96770-13663 </span>
                 </a>
@@ -150,23 +163,29 @@
         <div class="row">
           <div class="col-lg-4 col-sm-6 col-md-6">
             <div class="contact-block mb-4 mb-lg-0">
-              <i class="icofont-live-support"></i>
-              <h5>Call Us</h5>
-              <br />
-              +91 96770-13663
+              <a href="tel:+919677013663">
+                <i class="icofont-live-support"></i>
+                <h5>Call Us</h5>
+                <br />
+                +91 96770-13663
+              </a>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6 col-md-6">
             <div class="contact-block mb-4 mb-lg-0">
-              <i class="icofont-support-faq"></i>
-              <h5>Email Us</h5>
-              <br />
-              petindiaindustries@gmail.com
+              <a href="mailto:petindiaindustries@gmail.com">
+                <i class="icofont-support-faq"></i>
+                <h5>Email Us</h5>
+                <br />
+                petindiaindustries@gmail.com
+              </a>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6 col-md-6">
             <div class="contact-block mb-4 mb-lg-0">
               <i class="icofont-location-pin"></i>
+              <br />
+
               <h5>Location</h5>
               No.5, Thiruverkadu Main Road, Ayyapakkam, Chennai - 600077.
             </div>
@@ -181,6 +200,7 @@
           <div class="col-lg-6">
             <div class="section-title text-center">
               <h2 class="text-md mb-2">Contact us</h2>
+
               <div class="divider mx-auto my-4"></div>
               <p class="mb-5">
                 Send in your queries below so that our team can contact you
@@ -190,12 +210,7 @@
         </div>
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12">
-            <form
-              id="contact-form"
-              class="contact__form"
-              method="post"
-              action="mail.php"
-            >
+            <form id="contact-form" class="contact__form" method="post">
               <!-- form message -->
               <div class="row">
                 <div class="col-12">
@@ -259,7 +274,7 @@
                   name="message"
                   id="message"
                   class="form-control"
-                  rows="8"
+                  rows="4"
                   placeholder="Your Message"
                 ></textarea>
               </div>
@@ -280,7 +295,7 @@
     <div class="google-map col-lg-12 text-center">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.048825675034!2d80.12345767441495!3d13.09609218723086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52623ecd7f2329%3A0xa526fd962600481d!2sPet%20India%20Industries!5e0!3m2!1sen!2sin!4v1703093720104!5m2!1sen!2sin"
-        width="600"
+        width="90%"
         height="450"
         style="border: 0"
         allowfullscreen=""
@@ -303,7 +318,7 @@
                 />
               </div>
               <ul class="list-inline footer-socials mt-4">
-                <li class="list-inline-item">
+                <!-- <li class="list-inline-item">
                   <a href="https://www.facebook.com"
                     ><i class="icofont-facebook"></i
                   ></a>
@@ -312,7 +327,7 @@
                   <a href="https://twitter.com"
                     ><i class="icofont-twitter"></i
                   ></a>
-                </li>
+                </li> -->
                 <li class="list-inline-item">
                   <a
                     href="https://www.linkedin.com/company/pet-india-industries/"
@@ -355,7 +370,7 @@
                   <span class="h6 mb-0">Mon to Fri : 09:00 - 19:00</span>
                 </div>
                 <h4 class="mt-2">
-                  <a href="tel:+919677013663 ">96770-13663 </a>
+                  <a href="tel:+919677013663">96770-13663 </a>
                 </h4>
               </div>
             </div>
@@ -363,7 +378,7 @@
         </div>
         <div class="footer-btm py-4 mt-5">
           <div class="row align-items-center justify-content-between">
-            <div class="col-lg-6">
+            <div class="col-lg-12 text-center">
               <div class="copyright">
                 &copy; Copyright Reserved to
                 <span class="text-color">PetIndiaIndustries</span>

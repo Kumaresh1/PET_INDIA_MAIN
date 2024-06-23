@@ -4,7 +4,6 @@
 
         # FIX: Replace this email with recipient email
         // $mail_to = "kumareshappu12@gmail.com";
-        $mail_to = "sathishr150601@gmail.com";
 
         
         # Sender Data
